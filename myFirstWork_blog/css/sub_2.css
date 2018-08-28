@@ -1,0 +1,54 @@
+ul,ol{
+    list-style: none
+}
+body{
+    background: url("../images/pic/bigfish/bg.jpg");
+    -webkit-background-size: 100%;
+    background-size: 100%;}
+header,main,footer{
+    margin: 0 auto;
+    width: 1080px;}
+main{overflow: hidden;}
+div{
+    width: 300px;
+border:1px solid black;
+    margin-right: 50px;
+    height: 400px;
+float: left;
+    margin-bottom: 50px;}
+div.n1,div.n3,div.n5,div.n4{
+    height: 600px;}
+div.n5{float: none;
+    position: relative;
+    left: 350px;
+    top: 450px;}
+div.n6{float: none;
+position: relative;
+    left: 700px;}
+.n1{
+    background: url("../images/pic/bigfish/qiuai.jpg") no-repeat -100px 0 rgb(239, 194, 41);}
+.n2{
+    background: url("../images/pic/bigfish/xiaobing.jpg") no-repeat 0 0 #f5f5f5;
+    -webkit-background-size: 100%;
+    background-size: 100%;}
+.n3{
+    background: url("../images/pic/bigfish/结尾%20“你会成为一条大鱼”.jpg") no-repeat -200px 0 snow;}
+.n4{
+    background: url("../images/pic/bigfish/老爱德华.jpg") no-repeat 0 0 #646464;
+    -webkit-background-size: 100%;
+    background-size: 100%;}
+.n7{
+    color:#000000;
+    background: url("../images/pic/bigfish/老爱德华钓鱼.jpg") no-repeat 0 0 #00000b;
+    -webkit-background-size: 100%;
+    background-size: 100%;}
+.n5{
+    background: url("../images/pic/bigfish/海报竖.jpg") no-repeat 0 0 #2f0017;
+    -webkit-background-size: 100%;
+    background-size: 100%;}
+.n8{
+    background: url("../images/pic/bigfish/被吊起来的鞋子%20写意.jpg") no-repeat 0 0 #ffd97f;
+    -webkit-background-size: 100%;
+    background-size: 100%;}
+
+

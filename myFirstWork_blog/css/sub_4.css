@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;}
+ul,ol{list-style: none;}
+img{border:none;}
+a{text-decoration: none;color:white;}
+body{font-size: 16px;}
+header ul,div.banner,div.main,footer{
+    width: 1154px;
+    margin: 0 auto;}
+header ul{overflow: hidden}
+header ul li{float: left;
+    margin-left: 50px;}
+div.banner{
+    background: url("../images/sub_4ban.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 600px;}
+div.main{
+    height: 500px;overflow: hidden;
+    margin-top: 100px;}
+form{display: block;}
+ .main div:first-child{float: left;
+     width: 50%;}
+.main div:last-child{float: left;
+    width: 50%;}
+.main div:first-child li{
+    height: 100px;
+    width: 100%;
+}
+.main div p{font-family: 微软雅黑;font-size: 20px;color:cornflowerblue;text-indent: 2em;}
+.main div input{
+    margin-top: 10px;
+    font-size: 25px;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid #efefef;}
+button{display:block;
+    width: 120px;
+    height: 100px;
+border-radius: 50px;
+    margin-top: 35%;
+    margin-left: 45%;}
+footer{
+    height: 200px;
+    position: relative;
+    border: 1px solid black;
+}
+footer div{
+    height: 200px;
+    width: 1154px;
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+footer:hover div{display: block;
+    -webkit-animation: mv 1s;
+    -o-animation: mv 1s;
+    animation: mv 1s;}
+@keyframes mv {
+    0%{top: 100%;}
+    100%{top: 0;}
+}

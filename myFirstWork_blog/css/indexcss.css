@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-size: 16px;font-family: 微软雅黑;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+img{
+    border: 0px;
+}
+ul,ol{
+    list-style: none
+}
+header,main{
+
+    width: 100%;
+}
+
+
+
+/*正儿八经的地方*/
+div.float  {
+    width: 100%;
+    height: 100%;
+    background: url("../images/picpass/bg_nb.1.jpg");
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+header{
+    position: relative;
+}
+ul.m1{
+    width:65%;
+    height: 200px;
+    padding: 50px;
+    margin-left: 20%;
+    z-index: 1000;
+}
+ul.m1 li{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+    height: 125px;
+}
+ul.m1 a{
+    display: block;
+    width: 200px;
+    height: 125px;}
+ul.m{
+    margin-left: 25px;}
+main{
+    position: absolute;
+    width: 100%;
+    top:100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.warp{
+    height: 1080px;
+    width: 100%;
+min-width: 1000px;
+   }
+article{
+    width: 80%;
+    margin: 200px auto;
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+}
+main article>div{
+    width: 50%;
+    height: 500px;
+    float: left;
+    -webkit-background-size: 100% 105%;
+    background-size: 100% 105%;
+    min-width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+main article>div a{
+    display: block;
+    width: 100%;
+    height: 500px;}
+
+
+.bg_1{
+    background: url("../images/picpass/bg_nb.2.jpg") no-repeat;
+    -webkit-background-size: 100% 105%;
+    background-size: 100% 105%;
+    -webkit-animation: mv1 1.5s;
+    -o-animation: mv1 1.5s;
+    animation: mv1 1.5s;
+}
+.bg_2{
+      background: url("../images/picpass/BF.jpg");
+      webkit-background-size: 100% 105%;
+      background-size: 100% 105%;
+    -webkit-animation: mv1 1.5s;
+    -o-animation: mv1 1.5s;
+    animation: mv1 1.5s;
+  }
+.bg_3{
+    background: url("../images/picpass/bg_nb.4.jpg");
+    webkit-background-size: 100% 105%;
+    background-size: 100% 105%
+-webkit-animation: mv1 1.5s;
+    -o-animation: mv1 1.5s;
+    animation: mv1 1.5s;
+}
+.bg_4{
+    background: url("../images/picpass/bg_nb.5.jpg");
+    webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-animation: mv1 1.5s;
+    -o-animation: mv1 1.5s;
+    animation: mv1 1.5s;
+}
+.bg_5{
+    background: url("../images/picpass/bg_2.jpg");
+    webkit-background-size: 100% 105%;
+    background-size: 100% 105%;
+    -webkit-animation: mv1 1.5s;
+    -o-animation: mv1 1.5s;
+    animation: mv1 1.5s;
+}
+.bg_6{
+    background: url("../images/picpass/bg_nb.3.jpg");
+    webkit-background-size: 100% 105%;
+    background-size: 100% 105%;
+    -webkit-animation: mv1 1.5s;
+    -o-animation: mv1 1.5s;
+    animation: mv1 1.5s;
+}
+.bg_5_5{
+    background: url("../images/picpass/bg_2.gif");
+}
+.zhedang,.zhedang2{font-size: 60px;text-align: center;overflow: hidden;font-family: aac;}
+.zhedang{
+    padding-top: 221px;
+    height: 50%;
+    width: 100%;
+    background: #efefef;
+opacity: 0.5;
+position: absolute;
+top:0;
+    -webkit-animation: mv3 0.4s;
+    -o-animation: mv3 0.4s;
+    animation: mv3 0.4s;
+    display: none;  }
+.zhedang2{
+    line-height: 8px;
+    height: 50%;
+    width: 100%;
+    background: #efefef;
+    opacity: 0.5;
+    position: absolute;
+    top:50%;
+    -webkit-animation: mv2 0.4s;
+    -o-animation: mv2 0.4s;
+    animation: mv2 0.4s;
+    display: none;
+
+}
+
+
+ article>div:hover div{
+    display: block;}
+
+
+
+
+.fixed{position: fixed;
+    left: 0;
+    top: 0;}
+.d_none{display: none;}
+
+
+@keyframes mv1 {
+    0%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+@keyframes mv2 {
+           0%{top:100%}
+    100%{top:50%}
+}
+@keyframes mv3 {
+    0%{top:-50%}
+    100%{top:0}
+}
+@font-face {
+    font-family: aac;
+    src: url("../font/STXINGKA.TTF");
+}
+
+
+
+
