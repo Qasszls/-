@@ -1,0 +1,10 @@
+footer{
+    width: 100%;
+    position: absolute;
+    background: #a3a3a3;
+    bottom:0  ;}
+.f_warp{
+color: #ffffff;
+text-align: center;
+    height: 70px;
+    line-height: 70px;}

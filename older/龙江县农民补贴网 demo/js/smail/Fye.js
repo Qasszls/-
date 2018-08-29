@@ -1,0 +1,1 @@
+document.write('<span class="Fye"><span>共5页，当前为第1页</span><a href=""></a><a href=""></a><a href=""></a><a href=""></a></span>')

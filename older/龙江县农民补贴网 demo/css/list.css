@@ -1,0 +1,96 @@
+.Nav{
+    height: 30px;
+    background-image: linear-gradient(#ebf4fd 50%, #91bce9);
+    font-size: 13px;
+}
+aside{
+    width: 260px;
+    height: 910px;
+    margin-right: 10px;}
+dt a::before,.Fye a::before{
+     content: '首页>政策法规';
+     display:inline-block;
+     width: 120px;
+     height: 30px;
+     background: url("../images/article/cont_home.jpg") no-repeat  0 8px;
+     padding-left: 30px;
+     margin-left: 15px;
+     margin-top: 2px;
+     color:black;
+    line-height: 30px;
+ }
+a.fagui::before{
+    content: '政策法规';
+    margin-left: -30px;
+    background: url("../images/article/cont_Zz.jpg") no-repeat  0 5px;
+}
+.Fye{display: block;
+    margin-left: 120px;
+    color: black;font-size: 12px}
+.Fye a{    margin-left: 10px;
+    width: 50px;}
+.Fye a::before{content: '首页'  ;
+    width: 30px;
+    padding-left: 15px;
+    margin-top: -1px;
+    background:url("../images/article/cont_L2.jpg") no-repeat -4px 7px;  }
+.Fye a:nth-of-type(2)::before{
+    content: '前一页'  ;
+    width: 50px;
+    padding-left: 15px;
+    margin-top: -1px;
+    background:url("../images/article/cont_L1.jpg") no-repeat -4px 7px;
+}
+.Fye a:nth-of-type(3)::before{
+    content: '后一页'  ;
+    width: 50px;
+    padding-left: 15px;
+    margin-top: -1px;
+    background:url("../images/article/cont_R1.jpg") no-repeat -4px 7px;
+}
+.Fye a:nth-of-type(4)::before{
+    content: '尾页'  ;
+    width: 30px;
+    padding-left: 15px;
+    margin-top: -1px;
+    background:url("../images/article/cont_R2.jpg") no-repeat -4px 7px;
+}
+img,.hr_r{display: block;
+    margin: 5px auto 10px auto;
+    padding: 1px;}
+
+a.Cc::before{
+    content: '扶农政策';
+    display:inline-block;
+    width: 220px;
+    height: 30px;
+    background: url("../images/aside/cont_Rjiantou2.jpg");
+    background-repeat: no-repeat;
+    background-position: 60px 2px;
+    padding-left: 80px;
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 16px;
+    color:#5684c4;
+}
+a.Cc:nth-of-type(2)::before{
+    content: '惠民政策';
+    margin-top: 10px;
+}
+dd a{color:black;}
+.sousuo h3 a{
+    padding-left: 20px;color: #275FFF;
+    background: url("../images/aside/Rjiantou2.jpg") no-repeat left ;}
+dd.L{position: relative;}
+a.Ll{
+    display: inline-block;
+    position: absolute;
+    top:93px;
+    right: 0;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+text-align: center;
+    color:deepskyblue;
+    margin-top: 0;
+}

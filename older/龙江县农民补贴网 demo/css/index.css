@@ -1,0 +1,224 @@
+
+
+article>dl{border: 1px solid #e2e2e2; position: relative; }
+article dl dd,aside dl:first-child dd{
+    background: url("../images/index/article/l_Bqian.jpg")no-repeat left 7px;
+    margin-left: 9px;
+    margin-top: 7px;
+    padding-left: 10px;}
+article dl dt,.lianjie dt{
+    width: 100%;
+    background:url("../images/index/article/H_huicui.jpg") no-repeat left,linear-gradient(white 70%,#f1f1f1 90%);
+    height: 30px;
+    line-height: 30px;
+text-align: left;
+    padding-left: 12px;
+color:white;
+font-weight:400 ;}
+
+.lunbo,.jinri{
+    height: 248px;}
+.fagui,.jiedu,.huicui,.fengcai{
+    height: 200px;
+    width: 350px;
+}
+.lunbo{
+    width: 315px;
+}
+.jinri{
+    width: 348px;}
+.fagui,.fengcai{
+    width: 715px;}
+.banner{
+    height: 80px;}
+
+/*.jinri dt{*/
+    /*width: 100%;*/
+    /*background: #f9f9f9;*/
+    /*height: 30px;*/
+
+/*}*/
+/*.jinri dt span{*/
+    /*display:inline-block;text-align: center;*/
+    /*line-height: 30px;*/
+/*font-size: 16px;*/
+    /*height: 30px;*/
+    /*width: 100px;*/
+/*border-top: 2px solid blue;*/
+    /*border-right: 1px solid gray;*/
+    /*background: white;*/
+/*color:blue;*/
+    /*margin-left : -12px;}*/
+
+
+
+
+
+.zhiding{
+    width: 365px;
+    height: 70px;
+    margin: 10px auto 0 auto;
+    background:#f2f2f2;}
+/*对今日要闻进行的样式操作*/
+.fagui{overflow: hidden;font:13px 微软雅黑 ;}
+.fagui dl{}
+.fagui span:first-child{color:blue;float: left;display: inline-block;
+    width: 80px;}
+.fagui span:nth-of-type(2){color:gray;float: right;display: inline-block;
+    margin-right: 8px;}
+/*对政策法规的操作*/
+.fengcai dd{display: inline-block;}
+
+
+
+aside dl{
+    border: 1px solid #e2e2e2;
+    width: 279px;
+    margin-top: 5px;
+}
+aside dl dt{
+    background: url("../images/index/aside/H_aside.jpg");font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    color:white;
+}
+/*对aside中共有样式的书写*/
+aside img{
+    margin-top: 7px;
+    margin-left: 10px;}
+.gonggao{
+    height: 284px;
+    margin-top: 0;
+}
+.butie a{
+    display: block;
+    width: 100%;
+    height: 51px;
+    background: url("../images/index/aside/butie_1.jpg");
+    margin-bottom: 5px;
+}
+.butie a:nth-of-type(2){
+    background: url("../images/index/aside/butie_2.jpg");
+}
+.butie a:nth-of-type(3){
+    background: url("../images/index/aside/butie_3.jpg");
+    margin-bottom: 0;
+}
+.denglu a{
+    width: 247px;
+    height: 44px;
+display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+    background: url("../images/index/aside/Dlu_1.jpg");}
+.denglu a:nth-of-type(2){
+    background: url("../images/index/aside/Dlu_2.jpg");
+    margin-bottom: 20px;
+}
+.bumen a{
+    width: 262px;
+    height: 52px;
+display: block;
+    margin: 20px auto;
+    background: url("../images/index/aside/Select.jpg");}
+.jiandu{
+    height: 198px;
+    margin-top: 10px;
+    background: url("../images/index/aside/Kfu.PNG") no-repeat right bottom;
+}
+.jiandu dd{
+    font:18px all-small-caps;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.jiandu dd:last-child{
+    margin-top: 0;}
+#lianjie{
+    width: 1000px;
+    float: left;
+    margin-bottom: 10px;
+    height:110px;
+    border: 1px solid #E7E8EC;}
+.lianjie dd{display: inline-block;
+    width: 15%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 39px;}
+.lianjie a{
+    color: black;}
+dl.fengcai{
+    width: 1080px;
+}
+.fengcai dd{
+    background: none;
+    margin: 10px;
+    padding: 0;
+    height: 140px;
+    width: 250px;
+    color:white;
+    text-align: center;
+    line-height: 140px;
+}
+.fengcai dt{position: relative;
+    width: 715px;}
+
+.img_go{
+    width: 700px;
+    height: 200px;}
+
+
+.G::after{content: "了解更多";
+    cursor:pointer;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 30px;
+    background: url("../images/index/article/Play.jpg") no-repeat right;
+    font-size: 12px;
+    color: #8ac0f6;
+    padding-right: 30px;
+}
+
+/*tap*/
+.tab_box{ width:380px; border:1px solid #ddd; text-align:left;
+    height: 248px; }
+.tab_box a{color:black;}
+.tab_box .hd{ height:30px; line-height:30px; background:#f4f4f4; padding:0; border-bottom:1px solid #ddd;  position:relative; }
+.tab_box .hd ul{ float:left; position:absolute; left:20px; top:-1px; height:32px;   }
+.tab_box .hd ul li{ float:left; padding:0 15px; cursor:pointer;  }
+.tab_box .hd ul li.on{ height:30px;  background:#fff; border:1px solid #ddd; border-bottom:2px solid #fff; }
+.tab_box .bd ul{ padding:15px;  zoom:1;  }
+.tab_box .bd li{ height:24px; line-height:24px;   }
+.tab_box .bd li .date{ float:right; color:#999;  }
+ul.Add_width.m_l{margin-left:50px;}
+
+
+
+/*--无缝滚动--*/
+.picMarquee-left{ overflow:hidden; position:relative;  border:1px solid #ccc; width:690px; }
+.picMarquee-left .bd{ padding:10px;}
+.picMarquee-left  ul{ overflow:hidden; }
+.picMarquee-left  ul li{ margin:0 5px; float:left; display:inline; overflow:hidden; text-align:center;  }
+.picMarquee-left  ul li .pic{ text-align:center; }
+.picMarquee-left  ul li .pic img{     height: 140px;  width: 250px; display:block; padding:2px; border:1px solid #ccc; }
+.o_f{overflow:hidden;}
+.f_l{float:left;}
+.f_r{float:right;}
+.m_t{margin-top:10px;}
+.m_r{margin-right:20px;}
+.m_b{margin-bottom:20px;}
+.m_l{margin-left:20px;}
+.p_l{ padding-left: 20px;}
+
+
+
+.B::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background:url("../images/index/article/l_Bqian.jpg")no-repeat left 7px;
+}

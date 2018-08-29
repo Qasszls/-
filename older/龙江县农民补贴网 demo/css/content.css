@@ -1,0 +1,111 @@
+
+article{float: left;
+    border: 1px solid #E7E8EC;
+    width: 715px;}
+
+aside{
+    height: 1761px;
+    width: 279px;
+float: right;}
+/*article a span{*/
+    /*display: inline-block;*/
+    /*float: left;*/
+    /*margin-top: 5px;*/
+    /*margin-left: 50px;*/
+/*}*/
+article a::before{
+    content: '首页>政策法规';
+    display:inline-block;
+    width: 120px;
+    height: 30px;
+    background: url("../images/article/cont_home.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 30px;
+    margin-left: 15px;
+    margin-top: 6px;
+    color:black;
+}
+.Nav{
+    height: 30px;
+    background-image: linear-gradient(#ebf4fd 50%, #91bce9);
+    font-size: 13px;
+}
+.Fye{display: block;
+    margin-left: 120px;
+color: black;font-size: 12px}
+.Fye a{    margin-left: 10px;}
+ .A:before{content: '首页'  ;
+    width: 30px;
+    padding-left: 15px;
+    margin-top: -1px;
+    background:url("../images/article/cont_L2.jpg") no-repeat;
+    background-position: -4px 1px;}
+.Fye a:nth-of-type(2)::before{
+    content: '前一页'  ;
+    width: 50px;
+    padding-left: 15px;
+    margin-top: -1px;
+    background-image:url("../images/article/cont_L1.jpg");
+}
+.Fye a:nth-of-type(3)::before{
+    content: '后一页'  ;
+    width: 50px;
+    padding-left: 15px;
+    margin-top: -1px;
+    background-image:url("../images/article/cont_R1.jpg");
+}
+.Fye a:nth-of-type(4)::before{
+    content: '尾页'  ;
+    width: 30px;
+    padding-left: 15px;
+    margin-top: -1px;
+    background-image:url("../images/article/cont_R2.jpg");
+}
+a.C::before{content: '关于进一步完善《对种粮农民直接补贴工作经费管理办法》通知 ';
+    background: none;
+    width: 420px;
+    padding-left: 0;
+    margin: 0;
+
+    color:dodgerblue;}
+a.Cc::before{content: '中央财政新增70多亿元扶持农业';
+    background: none;
+    width: 420px;
+    padding-left: 10px;
+    margin: 0;
+    color:dodgerblue;
+}
+.wenzhang{
+    margin-top: 30px;}
+.wenzhang dt{font-size: 24px;}
+.wenzhang dd a::before{
+    content: '中央财政新增70多亿元扶持农业';
+    display:inline-block;
+    width: 220px;
+    height: 30px;
+    background: url("../images/article/cont_Rjiantou.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 30px;
+    margin-left: 15px;
+    margin-top: 6px;
+    color:black;
+}
+.yuedu a{
+    width: 200px;}
+section{
+    padding: 30px;}
+h3{font-size: 24px;
+color:deepskyblue;font-weight: bolder;}
+.b,.c{color:darkgrey;font-size: 13px;
+    margin-top: 10px;
+    line-height: 30px;}
+.c{color:black;
+    margin-top: 20px;text-indent: 2em;font-size: 15px}
+section img{display: block;
+    margin: 30px auto;
+}
+hr{color:white;border:1px dashed #E7E8EC}
+
+

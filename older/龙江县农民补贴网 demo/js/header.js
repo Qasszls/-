@@ -1,0 +1,16 @@
+document.write(
+'<nav class="nav_nomain"><div class="nav_warp"><a href="">设为首页&nbsp;&nbsp;丨</a><a href="">加入收藏</a><form  action=""><input type="text" placeholder="请输入关键字.."/><input type="button" value="搜索"/></form></div></nav>'+
+'<header>'+
+'<div style="width: 100%;height: 30px;"></div>'+
+'<nav class="nav_main">'+
+'<ul>'+
+'<li><a href="index.html">首页</a></li>'+
+'<li><a href="">新闻动态</a></li>'+
+'<li><a href="">通知公告</a></li>'+
+'<li><a href="list.html">政策法规</a></li>'+
+'<li><a href="">政策解读</a></li>'+
+'<li><a href="">下载中心</a></li>'+
+'<li><a href="">县域风采</a></li>'+
+'<li><a href="">文艺荟萃</a></li>'+
+'</ul></nav>'+
+'</header>')

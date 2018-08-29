@@ -1,0 +1,54 @@
+aside{    background: #EDF3FA;
+    padding-left: 10px;}
+article{border: none;}
+.gonggao{
+    height: 284px;
+    margin-top: 0;
+}
+aside dd a{
+    width: 120px;}
+.gonggao dd{
+    background: url("../../images/aside/Rjiantou.jpg")no-repeat left 7px;
+    margin-left: 9px;
+    margin-top: 7px;
+    padding-left: 15px;
+    font-size: 14px;
+    }
+.gonggao dt{font-size: 24px;
+    padding-top: 10px;
+    margin-top: 1px;
+    border-top: 1px solid #CBCBCB;
+    margin-left: 0;
+color:#2E67C6;}
+.gonggao img,.hr_r{display: block;
+    margin: 10px 0 10px 3px;
+border: 1px solid #C1C6CC;
+    padding: 1px;}
+.hr_r{margin: 40px auto 10px auto;
+    width: 220px;
+border: none;
+    padding: 0px;}
+.gonggao hr{
+    margin-top: 10px;}
+.yuedu dd{
+    height: 30px;
+    line-height: 30px;
+
+}
+.yuedu dd a{color:black;white-space: nowrap;}
+.yuedu dd span{
+    display: inline-block;
+    background: #EB5301;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+    text-align: center;
+    margin-right: 10px;
+}
+.yuedu dd:nth-of-type(4) span,.yuedu dd:nth-of-type(5) span,.yuedu dd:nth-of-type(6) span{
+    background: #A3A3A3;
+}
+.yuedu dt{color:#2E67C6;font-size: 24px}
+.yuedu hr{
+    margin-top: 10px;
+    margin-bottom: 10px;}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/Lyanban.css"/>
+    <link rel="stylesheet" href="style/nomain/header.css"/>
+    <link rel="stylesheet" href="style/nomain/footer.css"/>
+</head>
+<script src="js/jquery-1.8.3.min.js"></script>
+
+<script>
+    $(function(){
+        $(".bg_1").hide();
+        $(".Pu1").show();
+        $(".P:first-child").addClass("fo_Bg");
+
+
+        $(".b_1").click(function(){
+            $(".bg_1").hide();
+            $(".Pu1").fadeIn(1000);
+
+        })
+        $(".b_2").click(function(){
+            $(".bg_1").hide();
+            $(".Pu2").fadeIn(1000);
+        })
+        $(".b_3").click(function(){
+            $(".bg_1").hide();
+            $(".Pu3").fadeIn(1000);
+        })
+        $(".b_4").click(function(){
+            $(".bg_1").hide();
+            $(".Pu4").fadeIn(1000);
+        })
+
+        $(".P").click(function(){
+            $(this).siblings().removeClass("fo_Bg");
+            $(this).addClass("fo_Bg");
+
+        })
+
+$(".All_1 span").hide();
+        $("#Iu1").show();
+        $(".All_1 a").click(function(){
+            $(".All_1 span").slideUp(700);
+            $("#"+this.rel).slideDown(500);
+        })
+
+        $(".Tel li").mouseenter(function(){
+         $(this).siblings().children(".Zzhao").hide();
+            $(this).animate({backgroundSize:"120%"},2000);
+            $(this).children(".Zzhao").show().animate({left:0},700);
+        })
+        $(".Tel li").mouseleave(function(){
+            $(this).animate({backgroundSize:"100%"},2000);
+            $(this).children(".Zzhao").show().animate({left:"600px"},500);
+        })
+
+
+    })
+</script>
+<body>
+<script src="js/h,f,n/header.js"></script>
+<div class="float fixed"></div>
+<div class="L_main p_r o_f r_border">
+    <ul class="_tab  p_r ">
+        <li class="P b_1 ">常见问题  </li>
+        <li class="P b_2"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">QQ</a></li>
+        <li class="P b_3">留言板</li>
+        <li class="P b_4">联系电话</li>
+    </ul>
+<ul class="_tab_con p_r ">
+    <li class="p_a bg_1 Pu1">
+        <ul class="o_f A_warp">
+            <li class="All_1 "><a rel="Iu1">入学指南</a><span id="Iu1">asdadadadadadaasdadadadadadaasdadadadadadaasdadadadadadaasdadadadadadaasdadadadadadaasdadadadadadaasdadadadadada</span></li>
+            <li class="All_1"><a rel="Iu2">入学指南</a><span id="Iu2">asdadadadadada</span></li>
+            <li class="All_1"><a rel="Iu3">入学指南</a><span id="Iu3">asdadadadadada</span></li>
+            <li class="All_1"><a rel="Iu4">入学指南</a><span id="Iu4">asdadadadadada</span></li>
+            <li class="All_1"><a rel="Iu5">入学指南</a><span id="Iu5">asdadadadadada</span></li>
+        </ul></li>
+    <li class="p_a bg_1 Pu2">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1561790480&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1561790480:53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+    </li>
+    <li class="p_a bg_1 Pu3 p_r">
+        <!--<div class="Qzbs">-->
+            <!---->
+        <!--</div>保留项-->
+        <div class="Lyan_warp p_a">
+            <form action="">
+        <ul class="Lyan o_f">
+            <li><label for="In1">姓名：&nbsp;&nbsp;<input id="In1" type="text"/></label></li>
+            <li><label for="In2" >手机：&nbsp;&nbsp;<input id="In2" type="text"/></label></li>
+            <li><label for="In3" >QQ：&nbsp;&nbsp;&nbsp;<input id="In3" type="text"/></label></li>
+            <li class="p_r"><span class="p_a">问题:</span><label for="In4" ><textarea id="In4" ></textarea></label></li>
+        </ul>
+                <input class="Tjiao" type="submit" value="提交"/>
+                <input class="Czhi" type="reset" value="重置"/>
+            </form>
+        </div>
+    </li>
+    <li class="p_a bg_1 Pu4">
+        <ul class="Tel">
+            <li class="p_r o_f">
+                <div class="Zzhao p_a z_1">黄老师：
+                    0000-555555</div>
+                黄老师：
+                0000-555555
+            </li>
+            <li class="p_r o_f">
+                <div class="Zzhao p_a z_2">黄老师：
+                    0000-555555</div>
+                黄老师：
+                0000-555555
+            </li>
+        </ul>
+    </li>
+</ul>
+</div>
+<script src="js/h,f,n/footer.js"></script>
+<script src="js/foaver.js"></script>
+</body>
+</html>

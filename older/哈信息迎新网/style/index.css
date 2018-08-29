@@ -1,0 +1,78 @@
+
+
+.Bdao{
+    width: 400px;
+    padding: 40px;
+    top: 150px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 16px;
+}
+.Bdao dt,.Bdao dd{
+    margin-bottom: 13px;}
+.Znan{
+    width: 300px;
+    font-size: 16px;
+    right: 20px;
+    top: 80px;
+    background: white;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.Znan dt{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+color: #325dff;
+    border-bottom: 1px solid #DDDDDD;
+}
+.Znan dd:first-child{
+    border-top: 1px solid #999999;}
+.Znan dd{
+    position: relative;
+border-bottom: 1px solid #E8E8E8;
+    width: 300px;
+    height: 50px;
+    color:#555555;
+    text-align: left;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.Znan dd a.B::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    background:url("../images/cont_2.jpg")no-repeat left 7px;
+    -webkit-background-size: 60%;
+    background-size: 60%;
+}
+.baodaodenglu{
+    margin-top: 40px;
+    color:white;
+    height: 45px;
+    width: 150px;
+    background: #325dff;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+}
+div.warp{
+             height: 198px;
+    width: 1000px;
+         }
+ul.menu_1 li{float: left;
+    height: 198px;  }
+ul.menu_1 li a{display: inline-block;
+    width: 30px;
+    height: 198px;}
+ul.menu_1 li a img{  margin: 0 auto;display: block;}
+

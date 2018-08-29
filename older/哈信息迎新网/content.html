@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/content.css"/>
+    <link rel="stylesheet" href="style/nomain/header.css"/>
+    <link rel="stylesheet" href="style/nomain/footer.css"/>
+    <link rel="stylesheet" href="style/nomain/lunbocss.css"/>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function() {
+            $(".bg_1").hide();
+            $(".Pu1").show();
+            $(".P:first-child").animate({left: "-50px", width: "200px"}, 1000);
+
+            $(".b_1").click(function () {
+                $(".bg_1").hide();
+                $(".Pu1").show();
+            })
+            $(".b_2").click(function () {
+                $(".bg_1").hide();
+                $(".Pu2").show();
+            })
+            $(".b_3").click(function () {
+                $(".bg_1").hide();
+                $(".Pu3").show();
+            })
+            $(".b_4").click(function () {
+                $(".bg_1").hide();
+                $(".Pu4").show();
+            })
+            $(".b_5").click(function () {
+                $(".bg_1").hide();
+                $(".Pu5").show();
+            })
+            $(".b_6").click(function () {
+                $(".bg_1").hide();
+                $(".Pu6").show();
+            })
+
+            $(".All_1 span").hide();
+            $("#Iu1").show();
+            $(".All_1 a").click(function () {
+                $(".All_1 span").slideUp(700);
+                $("#" + this.rel).slideDown(500);
+            })
+            $(".P").click(function () {
+                $(this).siblings().animate({left: "0px", width: "120px"}, 500);
+                $(this).animate({left: "-50px", width: "200px"}, 1000)
+            })
+            $(".Tel li").mouseenter(function () {
+                $(this).siblings().children(".Zzhao").hide();
+                $(this).animate({backgroundSize: "120%"}, 2000);
+                $(this).children(".Zzhao").show().animate({left: 0}, 700);
+            })
+            $(".Tel li").mouseleave(function () {
+                $(this).animate({backgroundSize: "100%"}, 2000);
+                $(this).children(".Zzhao").show().animate({left: "600px"}, 500);
+            })
+
+            //图片轮播部分
+            zz = setInterval(lb, 2000);
+             zc = $("ul.ulb").css("top");
+            Kz=parseInt(zc);
+            console.log(Kz);
+            i = 0;
+            function lb() {
+                $("ul.ulb").css({top: -i * 390});
+                $("ul.dian li").eq(i).css({background: "white"});
+                $("ul.dian li").eq(i).siblings().css({background: "rgba(0,0,0,0.3)"});
+
+                i++;
+                if (i == 4) {i = 0;}
+            }
+
+            $("div.z1").mouseover(function () {
+                clearInterval(zz);
+            });
+            $("div.z1").mouseout(function () {
+                zz = setInterval(lb, 2000);
+
+            });
+
+            $("ul.dian li").mouseover(function () {
+                $(this).css({background: "white"});
+                $(this).siblings().css({background: "rgba(0,0,0,0.3)"});
+
+            });
+            $("ul.dian li").mouseout(function () {
+                $(this).css({background: "white"});
+                $(this).siblings().css({background: "rgba(0,0,0,0.3)"});
+
+            });
+            $("ul.dian li:nth-child(1)").mouseover(function () {
+                $("ul.ulb").css({top: 0, opacity: 1})
+            });
+            $("ul.dian li:nth-child(2)").mouseover(function () {
+                $("ul.ulb").css({top: -390, opacity: 1})
+            });
+            $("ul.dian li:nth-child(3)").mouseover(function () {
+                $("ul.ulb").css({top: -780, opacity: 1})
+            });
+            $("ul.dian li:nth-child(4)").mouseover(function () {
+                $("ul.ulb").css({top: -1170, opacity: 1})
+            });
+
+            $("div.bt1").click(function () {
+                var zc = $("ul.ulb").css("top");
+                if (zc == 0 + "px") {
+                    $("ul.ulb").css({top: -1170 + "px"})
+                }
+                ;
+                if (zc == -390 + "px") {
+                    $("ul.ulb").css({top: 0 + "px"})
+                }
+                ;
+                if (zc == -780 + "px") {
+                    $("ul.ulb").css({top: -390 + "px"})
+                }
+                ;
+                if (zc == -1170 + "px") {
+                    $("ul.ulb").css({top: -780 + "px"})
+                }
+                ;
+            });
+            $("div.bt2").click(function () {
+                var zc = $("ul.ulb").css("top");
+                if (zc == 0 + "px") {
+                    $("ul.ulb").css({top: -390 + "px"})
+                }
+                ;
+                if (zc == -390 + "px") {
+                    $("ul.ulb").css({top: -780 + "px"})
+                }
+                ;
+                if (zc == -780 + "px") {
+                    $("ul.ulb").css({top: -1170 + "px"})
+                }
+                ;
+                if (zc == -1170 + "px") {
+                    $("ul.ulb").css({top: 0 + "px"})
+                }
+                ;
+            });
+        })
+
+
+    </script>
+</head>
+<body>
+<script src="js/h,f,n/header.js"></script>
+<article class="r_border">
+<div class="lunbo">
+    <div class="z1">
+        <!--<div class="bt1 bt"></div>-->
+        <!--<div class="bt2 bt"></div>-->
+
+        <ul class="dian">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <ul class="ulb">
+            <li><img src="images/lunbo/0.jpg" alt=""/></li>
+            <li><img src="images/lunbo/1.jpg" alt=""/></li>
+            <li><img src="images/lunbo/2.jpg" alt=""/></li>
+            <li><img src="images/lunbo/3.jpg" alt=""/></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="Li_main p_r">
+    <div class="_tab  p_r ">
+        <div class="P b_1">学校寄语</div>
+        <div class="P b_2">学校简介</div>
+        <div class="P b_3">历史沿革</div>
+        <div class="P b_4">现任领导</div>
+        <div class="P b_5">视觉校园</div>
+        <div class="P b_6">校园印象</div>
+    </div>
+    <div class="_tab_con  p_a p_r">
+        <div class="p_a bg_1 Pu1">
+            <h3>别急</h3>
+            <p class="b">隐形小子</p>
+<p class="c"> 看着家乡，观察员的思绪开始飞转起来，想到了下个季节卑微的自己是不能拥有，或者说找不到配偶的。他紧皱着眉头想。他安慰自己说生来如此，生来如此。唉，他揉了揉鼻梁，狭小的观察站使他感到压抑，但同时也提供了一种逃避的机会，可以思考一些远离帝国精神的问题。他想到小时候，出生时他和别个一样，嘴巴，眼睛。身体的结构是如此相似。他生来也聪慧，有时还可以自己选择是跑着去做事，还是走着去。直到帝国对他召唤，他就只能待在这小地方了。在任职之前，他还豪气地说，帝国的工作他终生都要跑着去！<br/>&nbsp;&nbsp;&nbsp;
+    “帝国确实很懂我”他突然站起来，又和蔼的做到窗前，这浩瀚的宇宙总能让人谦卑的呼吸。虽然别个的站点都可以虚拟所观察的一切，但是他不羡慕。那个操作很复杂，他是不会学透的，所以不要也罢。<br/>&nbsp;&nbsp;&nbsp;
+    在这几百年的寂寞星光里，他拥有了自己的虚拟功能。他管脑海里的那个人叫“那个家伙”，他对这个称谓很满意。<br/>&nbsp;&nbsp;&nbsp;
+    喂，那个家伙！以后这里就是你的家了，你会在这里度过一生，如果幸运的话，你还会拥有你的妻子，家庭。你会享受性爱，会品味到伴侣之间旁人难以察觉的小趣味。你会时不时的掉入兴奋之中，像一个抱着装满糖果的罐子的小孩，对，在你小时候，我知道你记得。你还会与他人分享着宇宙星体中的那些难以捉摸，又深深吸引你的事。你身边的人会对你投来羡慕的神色，因为，你比那些同龄的孩子，早一些迈入帝国的运行序列中来。如果三体世界是一段浩瀚无尽的代码，你已经是某个功能不可被分割的部分，你能实现的，不比星星和太阳那样，但是也能让月亮与你亲密。我知道，你已经亟不可待了吧！？<br/>&nbsp;&nbsp;&nbsp;
+    可是我们什么也没有，他在空中飞舞的双手，那仿佛拿着一把无形的利剑的双手，天生的演说家，只不过这里是帝国。咚，他停下了，手臂撞在显示屏上，发出雨水落在窗上略有浑厚而优雅的声音。<br/>&nbsp;&nbsp;&nbsp;
+    观察站显示屏里正巧切到三体人在湖边与伴侣缠绵的画面，仿佛一种古老的仪式，庆祝着新的生命战胜那不稳定的季节变迁所带来的恐怖灾难。<br/>&nbsp;&nbsp;&nbsp;
+    他和他们是如此的相似，不论是声音，外貌，还是帝国当初允许的承诺：你会拥有一个家庭。 <br/>&nbsp;&nbsp;&nbsp;
+    “你什么都没有”那个家伙重复了一遍，只不过目的更为残忍。<br/>&nbsp;&nbsp;&nbsp;
+    他用力砸向那个幻影，却又响起咚，咚，雨水的声音。咚，咚，咚咚咚，他不停地敲击的屏幕。他的脸憋得通红，关节咯咯作响。在最后一刻，那个幻影仿佛挣脱了命运，怕怕观察员的肩膀说：“这不是你的错，人不应该是一段代码。雨水，人是雨滴，拥有自己的声音。你多少年没听过雨声了？”观察员的灵魂好似穿越到儿时又穿过拥挤的人群，站在那个欺哄他的官员面前，他，又听见那个招帝国观察员的官员说，喂，那个家伙！你要在那度过你的……<br/>&nbsp;&nbsp;&nbsp;
+    宇宙浩瀚无垠，是一个奇异的大牧场，他看着那三个恒星，对帝国的命运已经不在感兴趣，他在接下来的几周里总是想到结束这个词，直到倒数第二周，他将要走到生命的尽头时，他发现宇宙里传来一个陌生的讯息。那是帝国一直想拥有的世界，蓝色，绿色，恒定的季节气候，自由的选择配偶。他好像被救了，像被巨人捞起的落水的小狗，在巨人的怀里，这只小狗决定要守护巨人一生。<br/>&nbsp;&nbsp;&nbsp;
+    “不要回答，不要回答，不要回答。”他最后一段讯息如是说。<br/>&nbsp;&nbsp;&nbsp;
+    坐在窗前轻轻敲着玻璃的他不会想到，那会是他一生中最肯定，最坚决的决定。<br/>&nbsp;&nbsp;&nbsp;
+
+    当我们用一生学会一门精致的语言以及恰当的词语向珍贵的人表达爱意时，挡在我们面前的障碍不再是如何开始，而是何时结束。
+</p>
+        </div>
+        <div class="p_a bg_1 Pu2">
+            <img src="images/zhulou.JPG" alt=""/>
+<p class="c">哈尔滨信息工程学院始建于1995年，是经教育部批准设置的全日制普通本科高等学校，是国家示范性软件技术学院、全国高校毕业生就业工作先进单位。 [1]
+    学院两个校区分别坐落在高校林立的哈尔滨利民开发区学院路和哈东新区大学城。，校园占地面积70万平方米，建筑面积20.4万平方米，教学仪器设备总值4280万元，图书68万余册，实现了校园内无线网络全覆盖，生均占有资源位于同类院校前列。 [1]
+    截止到2015年9月30日，在校生6753人，其中本科在校生1542人，占学生总数的22.83%。学院现有专任教师382人，生师比17.68:1；硕士以上学历222人，占专任教师总数的58.12 %；副高级及以上职称150人，其中教授51人，副高级及以上职称比例达到39.27%；本科生主讲教师全部达到硕士以上学历，副教授以上教师承担本科教学任务达72%，教授承担本科课程比例达40%</p>
+        </div>
+        <div class="p_a bg_1 Pu3 p_r">
+            <p class="c">
+                1995年，哈尔滨华夏计算机专修学院创建。<br/></p>
+                <p class="c">
+                2002年，哈尔滨华夏计算机专修学院升格为哈尔滨华夏计算机职业技术学院。<br/></p>
+            <p class="c">
+                2014年，哈尔滨华夏计算机职业技术学院升格为哈尔滨信息工程学院。<br/></p>
+
+
+        </div>
+        <div class="p_a bg_1 Pu4"><figure>
+            <figcaption>姜宗胜</figcaption>
+             <p class="c"><img src="images/Jyuanzhang.jpg" alt=""/>姜宗胜，1986年于哈尔滨工业大学精仪系毕业后到黑龙江大学物理系任教，在黑龙江大学工作的近十年中，被历次评为教学优秀成果奖，并被评为黑龙江大学十佳青年教师，获得省教委青年教师教学成果奖。承担过省教委、科委多项课题，是黑龙江大学校史上第一个40岁以下获得国家自然科学基金项目的学者。承担多项自动化和计算机领域的项目。取得填补省内、国内空白，国内领先成果多项。
+            连续4年(1998-2001)获得哈尔滨高新技术产业开发区“优秀共产党员”荣誉称号，2001年9月被黑龙江省人事厅和省教育厅授予“黑龙江省教育先进工作者”荣誉称号。
+            哈尔滨华夏计算机职业技术学院的 创始人 院长</p>
+        </figure>
+        </div>
+        <div class="p_a bg_1 Pu5">
+            <video src="mp4/flower.webm" controls loop></video>
+        </div>
+        <div class="p_a bg_1 Pu6 o_f">
+            <div class="_Pbu1"><a href="">校园经典</a></div>
+            <div class="_Pbu2"><a href="">校园经典</a></div>
+            <div class="_Pbu3"><a href="">校园经典</a></div>
+            <div class="_Pbu4"><a href="">校园经典</a></div>
+            <div class="_Pbu5"><a href="">校园经典</a></div>
+            <div class="_Pbu6"><a href="">校园经典</a></div>
+            <div class="_Pbu7"><a href="">校园经典</a></div>
+            <div class="_Pbu8"><a href="">校园经典</a></div>
+        </div>
+    </div>
+</div>
+
+
+</article>
+<script src="js/foaver.js"></script>
+
+</body>
+</html>

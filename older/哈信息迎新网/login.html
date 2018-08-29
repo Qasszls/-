@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/nomain/header.css"/>
+    <link rel="stylesheet" href="style/nomain/footer.css"/>
+    <link rel="stylesheet" href="style/login.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/foaver.js"></script>
+    <script type="text/javascript">
+        function St(){
+
+            var usename=document.getElementById('D1');
+            var password=document.getElementById('D2');
+            if(usename.value.length>12||usename.value==''||isNaN(usename.value)){
+                alert('用户名为12位的学号且不能为非数字！');
+                return false;
+            }
+            if(password.value.length>6||usename.value.length==''||isNaN(password.value)){
+                alert('用户密码为6位的学号且不能为非数字！');
+                return false;
+            }
+        }
+
+    </script>
+</head>
+<body>
+<script src="js/h,f,n/header.js"></script>
+<div class="float fixed"></div>
+<div class="main p_r">
+    <div class="hidde"></div>
+        <div class="logo o_f r_border">
+            <div class="explain f_l"><h3>迎新登陆系统说明</h3>
+            <p>本科生如何登录迎新系统:<br/>
+                <span class="Gliang">本科生用户名：</span> 学号 <br/>
+                <span class="Gliang">初始密码</span><br/>
+                学生的密码为学生身份证号码后6位，默认密码则为身份证号码的倒数第6位~倒数第1位。
+                <span class="Zz"> 例如：身份证号为 </span>
+                则默认密码为020234，即灰色背景格中的数字。
+                <br/>
+                身份证最后一位为字母的，则密码为大写，即最后前5位数字和大写字母组成六位密码。
+                <br/>
+                <span class="c_r">所有本科生需登陆系统填报信息。</span>
+                </p></div>
+            <div class="logoin f_l">
+                <h3>迎新登录系统</h3>
+                <form action="" class="logoinn"><label for="D1">用户名：<input id="D1" type="text" placeholder="请填写用户名"/></label>
+                    <label for="D2">&nbsp;密&nbsp;码：<input id="D2" type="text" placeholder="请填写用户密码"/></label>
+                    <button class="btn" onclick="St()">登录</button></form>
+            </div>
+        </div>
+</div>
+<script src="js/h,f,n/footer.js"></script>
+</body>
+</html>

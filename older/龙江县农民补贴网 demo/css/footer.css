@@ -1,0 +1,16 @@
+footer{text-align: center;
+    margin: 0 auto;    background:linear-gradient( #a5a8a7 35%,white 35%);
+    overflow: hidden;}
+footer ul{
+    height: 50px;
+    width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+footer ul li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -9px;
+}
+footer ul li:first-child{     margin-left:80px;   }

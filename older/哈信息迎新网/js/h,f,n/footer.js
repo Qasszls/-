@@ -1,0 +1,1 @@
+document.write('<footer><div class="f_warp"><p>版权所有©2018&nbsp;哈尔滨信息工程学院</p></div></footer>')
